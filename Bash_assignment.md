@@ -1,53 +1,64 @@
 **Unix shell assignment**
 
 **Question 1**
-commands ps | wc gives 4 processes
+Commands ps | wc gives 4 processes
+
 **Question 2**
-2.we create a script log.sh
+We create a script log.sh
 ```bash=date
 who -q
 uptime
 then bash log.sh>logfile.txt
 ```
 **Question 3**
-3.touch command creates an empty file
+Touch command creates an empty file
 touch empty.txt
+
 **Question 4**
-4.from home/icipe
+From home/icipe
 ```bash=
 mkdir -p Work/mini-project/RNA-seq/
 ```
 **Question 5**
-5.The move command is used to rename files
+The move command is used to rename files
 mv seq.txt sequence.fasta
+
 **Question 6**
-6.Hello, world > universal_greetings.txt
+Hello, world > universal_greetings.txt
+
 **Question 7**
-7.Hello, world > "universal greetings".txt
+Hello, world > "universal greetings".txt
+
 **Question 8**
-8.curl -o command then paste the https 
+Curl -o command then paste the https 
+
 **Question 9**
-9.counting the number of lines in testa.fa use
+Counting the number of lines in testa.fa use
 wc -l testa.fa and the output is 10281
 counting the number of sequences
  grep ">" testa.fa | wc -l and the output is 100
+ 
  **Question 10**
-10.grep ">" test.fa >identifiers.txt
+Grep ">" test.fa >identifiers.txt
+
 **Question 11**
-11.Replace uppercase with lowercase
+Replace uppercase with lowercase
         sed -i "s/A/a/g" test.fa
+        
 **Question 12**
-12.grep -e ">" testa.fa
+Grep -e ">" testa.fa
+
 **Question 13**
-13.extract species
+Extract species
 ```bash=
 script named species.sh
 grep ">" test.fa | cut -d, -f1 | sed 's/PREDICTED://g' | awk '{print $2,$3}'
 ```
 **Question 14**
-14.bash species.sh test.fa sort | uniq -c
+Bash species.sh test.fa sort | uniq -c
+
 **Question 15**
-15.Bash loop creating interger 1-30
+Bash loop creating interger 1-30
 ```bash
 for intergers in $(seq 1 30) 
 do 
@@ -55,14 +66,17 @@ do
 done
 ```
 **Question 16**
-16.touch trials {1..20} | for file in trials {1..20}; do     mv"$file" "${file}.data"; done
+Touch trials {1..20} | for file in trials {1..20}; do     mv"$file" "${file}.data"; done
+
 **Question 17**
-17.The command expr 1 / 0 shows division by zero 
+The command expr 1 / 0 shows division by zero 
+
 **Question 18**
-18.echo output 1> stdout.log&&echo error2>stderr.log
+Echo output 1> stdout.log&&echo error2>stderr.log
 the first command redirects the standard output to stdout.log while the second  command redirects the standard error to stderr.log
+
 **Question 19**
-19. bash script
+Bash script
 ```bash
 #ask for name then input time and date of the day
 echo "we are in the year $(date)"
@@ -80,10 +94,11 @@ echo "Goodevening $varname! it is now $(date "+%T") on this lovely day of $(>
 fi 
 ```
 **Question 20**
-20.Go back two directories then open Fun_stuff
+Go back two directories then open Fun_stuff
 cd ../../Fun_stuff/
+
 **Question 21**
-21.Bash script of directories and files
+Bash script of directories and files
 ```bash generators.sh
 for i in {0..9}
 do
